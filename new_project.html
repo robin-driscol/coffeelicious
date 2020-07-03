@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Coffeelicious</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Welcome</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="new_signup.html">Sign In</a></li>
+
+    </ul>
+
+
+  </nav>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1>Coffeelicious</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper risus ut elit suscipit, nec molestie arcu lobortis. Maecenas at cursus massa. Pellentesque congue bibendum augue ut blandit. Phasellus egestas nisl quis pulvinar
+        ultricies. Cras neque ante, suscipit quis quam ut, dignissim hendrerit felis. Nullam ullamcorper libero in maximus maximus. Nunc efficitur, arcu vitae egestas luctus, justo felis lobortis felis, nec viverra tortor justo posuere lectus.
+        Praesent rhoncus egestas molestie. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper risus ut elit suscipit, nec molestie arcu lobortis. Maecenas at cursus massa. Pellentesque congue bibendum augue ut blandit. Phasellus egestas nisl quis pulvinar
+        ultricies. Cras neque ante, suscipit quis quam ut, dignissim hendrerit felis. Nullam ullamcorper libero in maximus maximus. Nunc efficitur, arcu vitae egestas luctus, justo felis lobortis felis, nec viverra tortor justo posuere lectus.
+        Praesent rhoncus egestas molestie. </p>
+
+    </div>
+
+
+  </div>
+
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="row">
+      <div class="col-lg-4 col-xs-6 thumbnail">
+        <img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/04LDEYRW59.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="coffee001" />
+      </div>
+      <div class="col-lg-4 col-xs-6 thumbnail">
+        <img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5JVPSVP7EI.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="coffee002" />
+      </div>
+      <div class="col-lg-4 col-xs-6 thumbnail">
+        <img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YSSFRY5B25.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="coffee003" />
+      </div>
+
+      <div class="col-lg-4 col-xs-6 thumbnail">
+        <img src="https://images.unsplash.com/photo-1466019251091-1933ce15ba04?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="coffee004" />
+      </div>
+
+      <div class="col-lg-4 col-xs-6 thumbnail">
+        <img src="https://images.unsplash.com/photo-1467189386127-c4e5e31ee213?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="coffee005" />
+      </div>
+
+      <div class="col-lg-4 col-xs-6 thumbnail">
+        <img src="https://images.unsplash.com/photo-1482242248426-c4e9fe3a559a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity" alt="coffee006" />
+
+      </div>
+
+
+    </div>
+  </div>
+
+<!--Modal functionality for hovering slideshow-->
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img id="img01" style="width:100%">
+    </div>
+  </div>
+<!--This makes the slideshow possible-->
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
+
+
+
+</body>
+
+</html>
